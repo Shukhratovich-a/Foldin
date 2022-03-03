@@ -10,12 +10,22 @@
 }
 
 .hero__heading {
-  max-width: 640px;
+  max-width: 650px;
   margin: 0;
   margin-bottom: 30px;
   font-weight: 600;
   font-size: 70px;
   line-height: 75px;
+
+  &::after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    width: 151px;
+    height: 53px;
+    background-image: url('../../Assets/Images/Heading-element.svg');
+  }
 
   &__top {
     display: block;
