@@ -21,10 +21,6 @@ function Sell() {
               <strong className="sell__text--strong">
                 Для начала, давайте определимся, к какому типу клиентов вы себя относите :)
               </strong>
-
-              {/* <form className="sell__form">
-                <select name="user__status" id=""></select>
-              </form> */}
             </div>
           </div>
         </div>
