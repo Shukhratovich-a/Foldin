@@ -1,0 +1,48 @@
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__item + .nav__item {
+  margin-left: 40px;
+}
+
+.nav__link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #252d35;
+  text-decoration: none;
+}
+
+.header__burger {
+  display: none;
+  width: 36px;
+  height: 29px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url('../../Assets/Images/Burger.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
+  outline: 0;
+}
+
+@media only screen and(max-width: 1200px) {
+  .nav__item + .nav__item {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and(max-width: 1030px) {
+  .header__burger{
+    display: block;
+  }
+
+  .nav{
+    display: none;
+  }
+}

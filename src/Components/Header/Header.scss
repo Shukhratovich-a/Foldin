@@ -1,0 +1,28 @@
+.header {
+  margin-bottom: 40px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba($color: #252d35, $alpha: 0.2);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__link-account {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../../Assets/Images/Person.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and(max-width: 425px) {
+  .header__link-account {
+    background-image: url("../../Assets/Images/Person-mobile.svg");
+    background-size: 35px;
+  }
+}

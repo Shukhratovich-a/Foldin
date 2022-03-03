@@ -1,0 +1,132 @@
+.hero {
+  margin-bottom: 260px;
+  padding-top: 40px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.hero__heading {
+  max-width: 640px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 75px;
+
+  &__top {
+    display: block;
+    font-weight: 700;
+    color: #b8884b;
+  }
+}
+
+.hero__list {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hero__item {
+  display: flex;
+  align-items: center;
+  line-height: 19px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 3px;
+    margin-right: 5px;
+    background-color: #b8884b;
+  }
+
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.hero__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 288px;
+  padding: 13px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #b8884b;
+  border: 2px solid #b8884b;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 20px;
+    margin-left: 10px;
+    background-image: url("../../Assets/Images/Link-vector.svg");
+  }
+}
+
+.hero__gallery {
+  width: 760px;
+  height: 700px;
+}
+
+.hero__gallery__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 40px;
+  width: 760px;
+  height: 700px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hero__gallery__item {
+  &:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  &:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  &:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  &:nth-child(4) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  &:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  }
+}
+
+.hero__gallery__image {
+  object-fit: cover;
+}
