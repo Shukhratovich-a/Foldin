@@ -16,14 +16,20 @@ function Benefits() {
           <ul className="benefits__list">
             <li className="benefit">
               <h3 className="benefit__heading">
-                <strong className="benefit__heading__top">18</strong>
+                <strong className="benefit__heading__top">
+                  <span>18</span>
+                  <span> лет</span>
+                </strong>
                 <span className="benefit__heading__bottom">работы на рынке</span>
               </h3>
             </li>
 
             <li className="benefit">
               <h3 className="benefit__heading">
-                <strong className="benefit__heading__top">8</strong>
+                <strong className="benefit__heading__top">
+                  <span>8</span>
+                  <span> лет</span>
+                </strong>
                 <span className="benefit__heading__bottom">собственному производству</span>
               </h3>
             </li>

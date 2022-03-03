@@ -1,0 +1,54 @@
+.sell {
+  margin-bottom: 260px;
+}
+
+.sell__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  padding-left: 64px;
+  background-color: (#f7f7f7);
+  backdrop-filter: blur(500px);
+  border: 2px solid #d1d6da;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 625px;
+    height: 363px;
+    background-image: url("../../Assets/Images/Sell-image.png");
+  }
+}
+
+.sell__info {
+  width: 710px;
+}
+
+.sell__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 65px;
+  color: #252d35;
+
+  .sell__heading__inner {
+    display: block;
+    font-weight: 700;
+    color: #b8884b;
+  }
+}
+
+.sell__text {
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: 19px;
+}
+
+.sell__text--strong {
+  display: block;
+  margin-bottom: 25px;
+  font-weight: 600;
+  line-height: 20px;
+}
